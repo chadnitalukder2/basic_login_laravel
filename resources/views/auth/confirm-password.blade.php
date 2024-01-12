@@ -6,7 +6,6 @@
     <form method="POST" action="{{ route('password.confirm') }}">
         @csrf
 
-        
         <!-- Password -->
         <div>
             <x-input-label for="password" :value="__('Password')" />
@@ -18,6 +17,7 @@
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
+        
 
         <div class="flex justify-end mt-4">
             <x-primary-button>
